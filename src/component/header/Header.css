@@ -1,0 +1,9 @@
+
+a > span:hover {
+    color: red;
+}
+
+
+.user__avatar {
+    font-size: 2rem;
+}
