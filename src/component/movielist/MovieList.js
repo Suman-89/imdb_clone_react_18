@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './MovieList.css';
 import MovieCard from '../card/MovieCard';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
 const MovieList = () => {
   const { type } = useParams();

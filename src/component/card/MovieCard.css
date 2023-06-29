@@ -16,6 +16,10 @@
     border: 1px solid rgb(99, 99, 99);
 }
 
+.cards:hover {
+    transform: scale(1.1);
+}
+
 .cards_overlay {
     position: absolute;
     padding: 0 1rem 1rem 1rem;
