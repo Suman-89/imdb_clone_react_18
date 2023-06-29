@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { Link } from "react-router-dom";
-import "./Card.css";
+import "./MovieCard.css";
 
 const MovieCard = ({ movieData }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -63,7 +63,8 @@ const MovieCard = ({ movieData }) => {
               backgroundImage: 'linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1))',
               opacity: '0',
               transition: 'opacity .2s'
-            }}>
+            }}
+            >
               <div className="card_title">
                 {movieData ? movieData.original_title : ""}
               </div>
