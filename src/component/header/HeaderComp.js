@@ -1,8 +1,8 @@
 import React from "react";
-import './Header.css';
+import './HeaderComp.css';
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const HeaderComp = () => {
   return (
     <div
       className="header"
@@ -59,4 +59,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComp;
