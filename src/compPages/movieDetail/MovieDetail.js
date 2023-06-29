@@ -28,20 +28,20 @@ const MovieDetail = () => {
   return (
     <>
       <div className="movie">
-        <div className="movie__intro">
+        <div className="movie_intro">
           <img
-            className="movie__backdrop"
+            className="movie_backdrop"
             src={`https://image.tmdb.org/t/p/original/${
               movieDetail && movieDetail ? movieDetail.backdrop_path : ""
             }`}
             alt=""
           />
         </div>
-        <div className="movie__detail">
-          <div className="movie__detailLeft">
-            <div className="movie__posterBox">
+        <div className="movie_detail">
+          <div className="movie_detailLeft">
+            <div className="movie_posterBox">
               <img  //https://image.tmdb.org/t/p/original/
-                className="movie__poster"
+                className="movie_poster"
                 src={`https://image.tmdb.org/t/p/original/${
                   movieDetail && movieDetail ? movieDetail.poster_path : ""
                 }`}
@@ -49,32 +49,32 @@ const MovieDetail = () => {
               />
             </div>
           </div>
-          <div className="movie__detailRight">
-            <div className="movie__detailRightTop">
-              <div className="movie__name">
+          <div className="movie_detailRight">
+            <div className="movie_detailRightTop">
+              <div className="movie_name">
                 {movieDetail ? movieDetail.original_title : ""}
               </div>
-              <div className="movie__tagline">
+              <div className="movie_tagline">
                 {movieDetail ? movieDetail.tagline : ""}
               </div>
-              <div className="movie__rating">
+              <div className="movie_rating">
                 {movieDetail ? movieDetail.vote_average : ""}{" "}
                 <i className="fas fa-star" />
-                <span className="movie__voteCount">
+                <span className="movie_voteCount">
                   {movieDetail ? "(" + movieDetail.vote_count + ") votes" : ""}
                 </span>
               </div>
-              <div className="movie__runtime">
+              <div className="movie_runtime">
                 {movieDetail ? movieDetail.runtime + " mins" : ""}
               </div>
-              <div className="movie__releaseDate">
+              <div className="movie_releaseDate">
                 {movieDetail ? "Release date: " + movieDetail.release_date : ""}
               </div>
-              <div className="movie__genres">
+              <div className="movie_genres">
                 {movieDetail && movieDetail.genres
                   ? movieDetail.genres.map((genre,gIndex) => (
                       <>
-                        <span className="movie__genre" id={genre.id} key={gIndex}>
+                        <span className="movie_genre" id={genre.id} key={gIndex}>
                           {genre.name}
                         </span>
                       </>
@@ -82,14 +82,14 @@ const MovieDetail = () => {
                   : ""}
               </div>
             </div>
-            <div className="movie__detailRightBottom">
+            <div className="movie_detailRightBottom">
               <div className="synopsisText">Synopsis</div>
               <div>{movieDetail ? movieDetail.overview : ""}</div>
             </div>
           </div>
         </div>
-        <div className="movie__links">
-          <div className="movie__heading">Useful Links</div>
+        <div className="movie_links">
+          <div className="movie_heading">Useful Links</div>
           {movieDetail && movieDetail.homepage && (
             <Link
               to={movieDetail.homepage}
@@ -97,7 +97,7 @@ const MovieDetail = () => {
               style={{ textDecoration: "none" }}
             >
               <p>
-                <span className="movie__homeButton movie__Button">
+                <span className="movie_homeButton movie_Button">
                   Homepage <i className="newTab fas fa-external-link-alt"></i>
                 </span>
               </p>
@@ -110,15 +110,15 @@ const MovieDetail = () => {
               style={{ textDecoration: "none" }}
             >
               <p>
-                <span className="movie__imdbButton movie__Button">
+                <span className="movie_imdbButton movie_Button">
                   IMDb<i className="newTab fas fa-external-link-alt"></i>
                 </span>
               </p>
             </Link>
           )}
         </div>
-        <div className="movie__heading">Production companies</div>
-        <div className="movie__production">
+        <div className="movie_heading">Production companies</div>
+        <div className="movie_production">
           {movieDetail &&
             movieDetail.production_companies &&
             movieDetail.production_companies.map((company,coIndex) => (
@@ -126,7 +126,7 @@ const MovieDetail = () => {
                 {company.logo_path && (
                   <span className="productionCompanyImage" key={coIndex}>
                     <img
-                      className="movie__productionComapany"
+                      className="movie_productionComapany"
                       src={
                         "https://image.tmdb.org/t/p/original/" +
                         company.logo_path

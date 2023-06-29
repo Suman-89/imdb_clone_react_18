@@ -6,18 +6,18 @@
     align-items: center;
 }
 
-.movie__intro {
+.movie_intro {
     width: 80%;
 }
 
-.movie__backdrop {
+.movie_backdrop {
     width: 100%;
     height: 500px;
     object-fit:cover;
     object-position: 0 35%;
 }
 
-.movie__detail {
+.movie_detail {
     align-items: center;
     width: 75%;
     display: flex;
@@ -25,17 +25,17 @@
     bottom: 225px;
 }
 
-.movie__detailLeft {
+.movie_detailLeft {
     margin-right: 30px;
 }
 
-.movie__poster {
+.movie_poster {
     width:300px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
 }
 
-.movie__detailRight {
+.movie_detailRight {
     color: white;
     display: flex;
     flex-direction: column;
@@ -43,25 +43,25 @@
     justify-content:space-between ;
 }
 
-.movie__detailRightTop > div{
+.movie_detailRightTop > div{
     text-shadow: 0px 0px 5px #000000;
     margin-bottom: .5rem;
 }
 
-.movie__name {
+.movie_name {
     font-weight: 600;
     font-size: 3rem;
 }
 
-.movie__voteCount {
+.movie_voteCount {
     margin-left: 1rem;
 }
 
-.movie__genres {
+.movie_genres {
     margin: 1.25rem 0;
 }
 
-.movie__genre {
+.movie_genre {
     padding: .5rem;
     border: 2px solid white;
     border-radius: 20px;
@@ -69,7 +69,7 @@
 }
 
 
-.movie__detailRightBottom {
+.movie_detailRightBottom {
     margin: 2rem 0;
     flex: 0.8;
 }
@@ -86,7 +86,7 @@
     margin-left: auto;
 }
 
-.movie__links {
+.movie_links {
     position: relative;
     bottom: 120px;
     display: flex;
@@ -94,11 +94,11 @@
     width: 75%;
 }
 
-.movie__heading {
+.movie_heading {
     font-size: 2.2rem;
 }
 
-.movie__Button {
+.movie_Button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,12 +110,12 @@
     font-weight: bold;
 }
 
-.movie__homeButton {
+.movie_homeButton {
     background-color:rgb(255, 0, 0);
     
 }
 
-.movie__imdbButton {
+.movie_imdbButton {
     background-color:#f3ce13;
 }
 
@@ -123,7 +123,7 @@
     margin-left: 1.4rem;
 }
 
-.movie__production {
+.movie_production {
     width: 85%;
     display: flex;
     justify-content: center;
@@ -132,7 +132,7 @@
 }
 
 
-.movie__productionComapany {
+.movie_productionComapany {
     width: 200px;
     margin: 2rem;
 }

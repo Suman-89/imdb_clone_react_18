@@ -1,9 +1,15 @@
-
-a > span:hover {
-    color: red;
+.header {
+  margin: 0 2.5rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
+a > span:hover {
+  color: red !important;
+}
 
-.user__avatar {
-    font-size: 2rem;
+.user_avatar {
+  font-size: 2rem;
 }

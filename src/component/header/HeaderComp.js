@@ -6,13 +6,6 @@ const HeaderComp = () => {
   return (
     <div
       className="header"
-      style={{
-        margin: "0 2.5rem",
-        padding: ".5rem 0",
-        alignItems: "center",
-        display: "flex",
-        justifyContent: "space-between"
-      }}
     >
       <div
         className="headerLeft"
