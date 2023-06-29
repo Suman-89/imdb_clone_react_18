@@ -41,7 +41,7 @@ const MovieList = () => {
         <div className="list_cards">
           {movieList &&
             movieList.map((mdata, mindex) => {
-              return <MovieCard movieData={mdata} key={mdata.id} />;
+              return <MovieCard movieData={mdata} key={mdata.id} />; // key attribute can not be passed to child component//
             })}
         </div>
       </div>
